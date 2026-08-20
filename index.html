@@ -3,106 +3,542 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qarshi Remittance - Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for the Qarshi Pay App.">
+    <meta name="theme-color" content="#050505">
+    <title>Qarshi Pay App - Privacy Policy</title>
     <style>
+        :root {
+            --navy: #082732;
+            --teal: #0B8F83;
+            --gold: #DDBA36;
+            --black: #050505;
+            --ink: #172B33;
+            --muted: #667A80;
+            --line: #D8E2E1;
+            --paper: #FFFFFF;
+            --page: #F4F7F7;
+            --teal-soft: #EAF8F5;
+            --gold-soft: #FFF6D9;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #F9FAFB;
-            color: #111827;
-            line-height: 1.7;
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 40px 24px;
-        }
-        h2 {
-            color: #007A33; /* Qarshi Logo Fintech Green */
-            font-size: 20px;
-            font-weight: 700;
-            margin-top: 32px;
-            border-bottom: 1px solid #E5E7EB;
-            padding-bottom: 8px;
-        }
-        p {
-            font-size: 15px;
-            margin-bottom: 16px;
-        }
-        ul {
-            padding-left: 20px;
-            margin-bottom: 16px;
-        }
-        li {
-            font-size: 15px;
-            margin-bottom: 8px;
-        }
-        .header-panel {
-            text-align: center;
-            padding-bottom: 24px;
-            margin-bottom: 32px;
-            border-bottom: 2px solid #D4AF37; /* Qarshi Logo Gold Line */
-        }
-        .brand-title {
-            font-size: 28px;
-            fontWeight: 800;
-            letter-spacing: 1px;
             margin: 0;
-            color: #111827;
+            background: var(--page);
+            color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
         }
+
+        a {
+            color: var(--teal);
+        }
+
+        a:focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 3px;
+            border-radius: 3px;
+        }
+
+        .site-header {
+            background: var(--black);
+            color: #FFFFFF;
+            border-bottom: 4px solid var(--gold);
+        }
+
+        .header-inner {
+            width: min(100% - 32px, 820px);
+            margin: 0 auto;
+            padding: 30px 0 26px;
+            text-align: center;
+        }
+
+        .brand-logo {
+            display: block;
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin: 0 auto 12px;
+        }
+
+        .brand-title {
+            margin: 0;
+            color: #FFFFFF;
+            font-size: clamp(1.75rem, 6vw, 2.35rem);
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            line-height: 1.15;
+        }
+
+        .policy-title {
+            margin: 8px 0 0;
+            color: var(--gold);
+            font-size: 1rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+        }
+
         .date-sub {
-            color: #6B7280;
-            font-size: 13px;
-            margin-top: 4px;
+            margin: 6px 0 0;
+            color: #CAD6D9;
+            font-size: 0.84rem;
+        }
+
+        main {
+            width: min(100% - 32px, 820px);
+            margin: 28px auto 52px;
+            padding: clamp(22px, 5vw, 48px);
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            box-shadow: 0 18px 50px rgba(8, 39, 50, 0.08);
+        }
+
+        .notice {
+            margin: 0 0 30px;
+            padding: 18px 20px;
+            background: var(--gold-soft);
+            border-left: 5px solid var(--gold);
+            border-radius: 10px;
+        }
+
+        .notice strong {
+            color: #6C5100;
+        }
+
+        .toc {
+            margin: 0 0 34px;
+            padding: 20px 22px;
+            background: var(--teal-soft);
+            border: 1px solid #BFE8E0;
+            border-radius: 12px;
+        }
+
+        .toc h2 {
+            margin-top: 0;
+            border: 0;
+            padding: 0;
+        }
+
+        .toc ol {
+            columns: 2;
+            column-gap: 34px;
+            margin: 0;
+            padding-left: 22px;
+        }
+
+        .toc li {
+            break-inside: avoid;
+            margin-bottom: 4px;
+        }
+
+        .toc a {
+            text-decoration: none;
+        }
+
+        h2 {
+            margin: 38px 0 14px;
+            padding-bottom: 8px;
+            color: var(--teal);
+            border-bottom: 1px solid var(--line);
+            font-size: clamp(1.25rem, 4vw, 1.55rem);
+            font-weight: 800;
+            line-height: 1.3;
+            scroll-margin-top: 18px;
+        }
+
+        p {
+            margin: 0 0 16px;
+        }
+
+        ul {
+            margin: 0 0 18px;
+            padding-left: 23px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .contact-card {
+            padding: 20px;
+            background: var(--teal-soft);
+            border: 1px solid #BFE8E0;
+            border-radius: 12px;
+        }
+
+        .contact-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .review-note {
+            padding: 18px 20px;
+            background: #F8FAFA;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            color: #425D65;
+        }
+
+        footer {
+            width: min(100% - 32px, 820px);
+            margin: 0 auto;
+            padding: 0 0 42px;
+            color: var(--muted);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        @media (max-width: 640px) {
+            .header-inner {
+                padding-top: max(24px, env(safe-area-inset-top));
+            }
+
+            .brand-logo {
+                width: 128px;
+                height: 128px;
+            }
+
+            main {
+                width: 100%;
+                margin: 0;
+                border-right: 0;
+                border-left: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .toc ol {
+                columns: 1;
+            }
+        }
+
+        @media print {
+            body {
+                background: #FFFFFF;
+            }
+
+            .site-header {
+                background: #FFFFFF;
+                color: var(--ink);
+                border-bottom-color: var(--gold);
+            }
+
+            .brand-title {
+                color: var(--navy);
+            }
+
+            .date-sub {
+                color: var(--muted);
+            }
+
+            main {
+                width: 100%;
+                margin: 0;
+                padding: 20px 0;
+                border: 0;
+                box-shadow: none;
+            }
+
+            .toc {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
+    <header class="site-header">
+        <div class="header-inner">
+            <img
+                class="brand-logo"
+                src="qarshi-pay-app-logo.png"
+                alt="Qarshi Pay App logo"
+                width="150"
+                height="150"
+            >
+            <h1 class="brand-title">QARSHI PAY APP</h1>
+            <p class="policy-title">PRIVACY POLICY</p>
+            <p class="date-sub">Effective August 19, 2026</p>
+        </div>
+    </header>
 
-    <div class="header-panel">
-        <h1 class="brand-title">QARSHI REMITTANCE</h1>
-        <div class="date-sub">PRIVACY POLICY • LAST UPDATED: AUGUST 16, 2026</div>
-    </div>
+    <main id="main-content">
+        <aside class="notice" aria-label="Pre-launch notice">
+            <strong>Pre-launch notice:</strong> Qarshi Pay App is currently a
+            pre-launch product. This policy describes information the app may
+            process when features are enabled. Actual data flows, providers,
+            payout corridors, and retention duties will depend on the licensed
+            partners and services approved for launch.
+        </aside>
 
-    <p>Qarshi Remittance Technologies Inc. ("Qarshi", "we", "us", or "our") operates the Qarshi mobile application. We are committed to protecting your privacy and securing your personal and financial information. This Privacy Policy describes how we collect, use, and safeguard your data when you utilize our cross-border money transfer platform.</p>
+        <nav class="toc" aria-label="Privacy policy contents">
+            <h2>Contents</h2>
+            <ol>
+                <li><a href="#scope">Scope and Who We Are</a></li>
+                <li><a href="#information">Information We Collect</a></li>
+                <li><a href="#collection">How We Collect Information</a></li>
+                <li><a href="#use">How We Use Information</a></li>
+                <li><a href="#disclosure">How We Disclose Information</a></li>
+                <li><a href="#plaid">Plaid and Connected Accounts</a></li>
+                <li><a href="#retention">Data Retention</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#rights">Your Choices and Rights</a></li>
+                <li><a href="#children">Children and Eligibility</a></li>
+                <li><a href="#international">International Processing</a></li>
+                <li><a href="#third-parties">Third-Party Services</a></li>
+                <li><a href="#changes">Changes to This Policy</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#review">Legal Review Notice</a></li>
+            </ol>
+        </nav>
 
-    <h2>1. Information We Collect</h2>
-    <p>To facilitate secure international money transfers from the United States to mobile wallets and banking systems in East Africa—specifically covering <strong>Ethiopia, Kenya, Somalia, and Djibouti</strong>—we collect several categories of information:</p>
-    <ul>
-        <li><strong>Identity Information:</strong> Full Name, Date of Birth, and Government Identification (such as a Passport or Driver’s License image).</li>
-        <li><strong>Compliance Metadata:</strong> Last 4 digits of your Social Security Number (SSN) to execute automated Know Your Customer (KYC) and Anti-Money Laundering (AML) regulatory verifications.</li>
-        <li><strong>Contact & Account Data:</strong> Email Address, Physical US Address, Phone Number, and Secure App Login Credentials.</li>
-        <li><strong>Financial Details:</strong> Bank account tokenized references pulled via secure integration networks (such as Plaid or Stripe). We never store raw banking routing or account numbers on our local databases.</li>
-        <li><strong>Transaction Record Data:</strong> Specific transaction amounts, converted exchange rates, timestamps, and recipient details. This includes receiving digital networks across our active regional corridors:
+        <section aria-labelledby="scope">
+            <h2 id="scope">1. Scope and Who We Are</h2>
+            <p>
+                This Privacy Policy explains how Qarshi Pay App ("Qarshi,"
+                "we," "us," or "our") collects, uses, discloses, retains, and
+                protects personal information when you use our mobile
+                application, website, customer support, or related services.
+                Qarshi Pay is designed for eligible U.S. customers who send
+                money to supported recipients and mobile wallets through
+                approved remittance, funding, identity-verification, screening,
+                and payout partners.
+            </p>
+            <p>
+                This policy applies only to Qarshi-controlled services. A bank,
+                Plaid, identity-verification provider, licensed remittance
+                provider, payout partner, wallet operator, or other third party
+                may process information under its own privacy notice.
+            </p>
+        </section>
+
+        <section aria-labelledby="information">
+            <h2 id="information">2. Information We Collect</h2>
+            <p>
+                Depending on the features you use and the requirements of our
+                partners, we may collect:
+            </p>
             <ul>
-                <li><strong>Ethiopia:</strong> Telebirr, CBE Birr, AwashBirr, and mobile telephone numbers.</li>
-                <li><strong>Somalia:</strong> EVC Plus (Hormuud), Zaad Wallet (Telesom), and mobile telephone numbers.</li>
-                <li><strong>Djibouti:</strong> Evatis, D-Money, and mobile telephone numbers.</li>
-                <li><strong>Kenya:</strong> M-Pesa (Safaricom), Airtel Money, and mobile telephone numbers.</li>
+                <li><strong>Identity and eligibility information:</strong> Name, date of birth, citizenship or residency information, government-issued identification, selfie or liveness results, Social Security number or portions of it, and identity-verification results.</li>
+                <li><strong>Contact and account information:</strong> Email address, mobile number, residential address, login credentials, authentication records, language preferences, and account settings.</li>
+                <li><strong>Funding and financial-connection information:</strong> Bank name, account type, masked account details, account identifiers or tokens, connection status, funding method, payment-authorization status, and return or chargeback information.</li>
+                <li><strong>Transfer and recipient information:</strong> Send amount, fees, exchange rate, amount received, corridor, recipient name, recipient mobile number, wallet or payout method, timestamps, delivery estimate, transaction status, receipt, and reference number.</li>
+                <li><strong>Compliance and risk information:</strong> Identity-screening, sanctions and watchlist results, fraud indicators, transaction-monitoring alerts, source-of-funds information, case notes, eligibility decisions, and records required by law or regulated partners.</li>
+                <li><strong>Device, usage, and security information:</strong> IP address, device and app identifiers, operating system, app version, login activity, diagnostic logs, crash reports, approximate location inferred from IP, security events, and interaction data.</li>
+                <li><strong>Communications:</strong> Messages, support requests, complaints, survey responses, and records of notices or consents you provide.</li>
             </ul>
-        </li>
-    </ul>
+        </section>
 
-    <h2>2. How We Use Your Information</h2>
-    <p>We utilize your collected personal data strictly to maintain compliance infrastructure and provide our services:</p>
-    <ul>
-        <li>To process cross-border money transfers securely.</li>
-        <li>To comply with the United States FinCEN and partner central bank regulations. This includes reporting mandates governed by the National Bank of Ethiopia, the Central Bank of Kenya, the Central Bank of Somalia, and the Central Bank of Djibouti, alongside mandatory US Bank Secrecy Act (BSA) compliance guidelines.</li>
-        <li>To monitor and eliminate transaction structuring, identity fraud, and cybersecurity threats.</li>
-        <li>To transmit automated notifications and receipt logs regarding transfer completion metrics.</li>
-    </ul>
+        <section aria-labelledby="collection">
+            <h2 id="collection">3. How We Collect Information</h2>
+            <ul>
+                <li>Directly from you when you create an account, verify your identity, connect a funding method, enter recipient details, request a transfer, or contact support.</li>
+                <li>Automatically from your device and use of the app, including security, diagnostic, and interaction records.</li>
+                <li>From providers and partners such as Plaid, banks, payment processors, identity and sanctions-screening providers, licensed remittance providers, payout networks, and mobile-wallet operators.</li>
+                <li>From public, regulatory, fraud-prevention, or legally authorized sources when needed for compliance and security.</li>
+            </ul>
+        </section>
 
-    <h2>3. Data Sharing and Third-Party API Processing</h2>
-    <p>Qarshi handles your information securely and will never sell your personal data. To provide regional remittance pipelines, we securely pass tokenized data parameters to our integrated, licensed partners:</p>
-    <ul>
-        <li><strong>Payment Infrastructure:</strong> Stripe and Plaid for USD funding collection.</li>
-        <li><strong>Remittance Infrastructure:</strong> Our designated licensed Banking-as-a-Service (BaaS) platforms and international payout network operators to transmit local funds or mobile digital currency straight to active regional mobile networks.</li>
-    </ul>
+        <section aria-labelledby="use">
+            <h2 id="use">4. How We Use Information</h2>
+            <ul>
+                <li>Create, authenticate, maintain, and support your Qarshi Pay account.</li>
+                <li>Verify identity and eligibility and perform Know Your Customer, sanctions, anti-money-laundering, fraud, and security checks.</li>
+                <li>Connect or verify funding methods and request payment authorization through the applicable provider.</li>
+                <li>Calculate, review, submit, process, track, reconcile, and support transfers and related receipts.</li>
+                <li>Display corridor-specific wallets, exchange rates, fees, recipient amounts, delivery estimates, and transaction states supplied or confirmed by approved partners.</li>
+                <li>Send service, security, compliance, transaction, support, and policy communications.</li>
+                <li>Prevent abuse, investigate incidents, resolve disputes, enforce agreements, and protect customers, recipients, partners, and the public.</li>
+                <li>Meet legal, regulatory, recordkeeping, audit, reporting, and partner obligations.</li>
+                <li>Improve accessibility, reliability, performance, and customer experience using appropriately limited or aggregated information where feasible.</li>
+            </ul>
+        </section>
 
-    <h2>4. Data Security and Encryption</h2>
-    <p>All data transmitted within the Qarshi application framework is fully encrypted using Secure Socket Layer (SSL) and Advanced Encryption Standard (AES-256) network architectures. Your identity documentation files are isolated in restricted storage clouds.</p>
+        <section aria-labelledby="disclosure">
+            <h2 id="disclosure">5. How We Disclose Information</h2>
+            <p>
+                We may disclose personal information to the following categories
+                of recipients for the purposes described in this policy:
+            </p>
+            <ul>
+                <li><strong>Funding and account-connection providers,</strong> such as Plaid, banks, ACH providers, card or payment processors, and financial institutions used to connect or fund a transfer.</li>
+                <li><strong>Licensed remittance and payout partners</strong> responsible for regulated money movement, foreign exchange, settlement, delivery, error resolution, and required disclosures.</li>
+                <li><strong>Identity, compliance, and fraud providers</strong> supporting identity verification, document validation, sanctions screening, transaction monitoring, device intelligence, and case management.</li>
+                <li><strong>Technology and operations providers</strong> supporting hosting, communications, customer support, analytics, logging, cybersecurity, and professional services under appropriate restrictions.</li>
+                <li><strong>Recipient-facing providers,</strong> including participating banks, payout networks, and supported mobile-wallet operators needed to deliver or troubleshoot a transfer.</li>
+                <li><strong>Authorities and protected parties</strong> when disclosure is required or permitted by law, legal process, regulatory request, audit, investigation, safety need, fraud prevention, or protection of rights.</li>
+                <li><strong>Business-transaction participants</strong> in connection with a proposed or completed financing, merger, acquisition, reorganization, sale of assets, or similar transaction, subject to appropriate protections.</li>
+            </ul>
+            <p>
+                Qarshi does not sell personal information for money. If a future
+                practice is treated as a "sale," "sharing," or targeted
+                advertising under applicable law, we will provide any notice and
+                choice required before using that practice.
+            </p>
+        </section>
 
-    <h2>5. Your Rights and Retention</h2>
-    <p>In accordance with federal and international financial regulations, structural transaction logs and identity parameters cannot be immediately removed upon request. This data must be securely retained for a minimum statutory period of five (5) years to fulfill anti-structuring and anti-terrorist financing compliance reporting mandates.</p>
+        <section aria-labelledby="plaid">
+            <h2 id="plaid">6. Plaid and Connected Financial Accounts</h2>
+            <p>
+                If you choose to connect a financial account using Plaid, Plaid
+                may collect and process information under its own privacy policy
+                and present its own consent flow. Qarshi receives only the
+                information and permissions needed for the enabled feature,
+                subject to configuration and applicable law. We seek to use
+                tokenized or limited account information rather than your
+                online-banking password.
+            </p>
+            <p>
+                A successful account connection does not by itself mean that a
+                payment has been authorized, a transfer has been submitted, or
+                funds have been delivered. Disconnecting an account does not
+                require deletion of records that Qarshi or its regulated partners
+                must retain for transactions, security, disputes, or legal compliance.
+            </p>
+        </section>
 
-    <p style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #E5E7EB; color: #6B7280; font-size: 13px;">For privacy support inquiries, please contact us at: support@qarshiapp.com.</p>
+        <section aria-labelledby="retention">
+            <h2 id="retention">7. Data Retention</h2>
+            <p>
+                We retain personal information only for as long as reasonably
+                necessary to provide services, maintain security, resolve
+                disputes, enforce agreements, and meet legal, regulatory, audit,
+                tax, sanctions, anti-money-laundering, and partner obligations.
+                Retention periods vary by record type, account status,
+                transaction history, jurisdiction, and the licensed provider's role.
+            </p>
+            <p>
+                Certain transaction, identity, compliance, and investigation
+                records may need to be retained for five years or another period
+                required by law or a regulated partner. Other records may be
+                deleted or de-identified sooner. A deletion request does not
+                override lawful retention duties.
+            </p>
+        </section>
 
+        <section aria-labelledby="security">
+            <h2 id="security">8. Security</h2>
+            <p>
+                We use administrative, technical, and physical safeguards
+                designed to protect personal information, such as encryption in
+                transit where appropriate, access controls, authentication,
+                logging, vendor oversight, secure development practices, and
+                incident-response procedures. No system or method of transmission
+                is completely secure, and we cannot guarantee absolute security.
+            </p>
+        </section>
+
+        <section aria-labelledby="rights">
+            <h2 id="rights">9. Your Choices and Privacy Rights</h2>
+            <p>
+                Depending on where you live and subject to legal exceptions, you
+                may be able to:
+            </p>
+            <ul>
+                <li>Access, correct, or update certain account information.</li>
+                <li>Request deletion of eligible information or closure of your account.</li>
+                <li>Request a copy of certain information or details about how it is processed.</li>
+                <li>Withdraw consent where processing depends on consent, without affecting prior lawful processing.</li>
+                <li>Manage marketing messages while continuing to receive essential service, security, and transaction communications.</li>
+                <li>Appeal a denied privacy request where applicable.</li>
+            </ul>
+            <p>
+                To submit a request, email
+                <a href="mailto:support@qarshiapp.com">support@qarshiapp.com</a>.
+                We may verify your identity before responding and may deny or
+                limit a request when permitted or required by law.
+            </p>
+        </section>
+
+        <section aria-labelledby="children">
+            <h2 id="children">10. Children and Eligibility</h2>
+            <p>
+                Qarshi Pay is not intended for children under 13, and the
+                money-transfer service is intended only for users who meet the
+                age and eligibility requirements established by Qarshi and its
+                licensed partners. We do not knowingly collect personal
+                information online from a child under 13 without legally required
+                authorization. Contact us if you believe a child has provided information.
+            </p>
+        </section>
+
+        <section aria-labelledby="international">
+            <h2 id="international">11. International Processing</h2>
+            <p>
+                Because Qarshi Pay is designed for cross-border transfers,
+                information may be processed in the United States and in
+                countries associated with approved recipients, payout providers,
+                mobile wallets, technology providers, or regulators. Privacy and
+                data-protection laws may differ across jurisdictions. We and our
+                partners will use safeguards required for the applicable processing.
+            </p>
+        </section>
+
+        <section aria-labelledby="third-parties">
+            <h2 id="third-parties">12. Third-Party Services and Links</h2>
+            <p>
+                The app may link to or interact with services controlled by other
+                organizations. Their privacy notices, terms, security practices,
+                availability, and data handling are their responsibility. Review
+                the relevant notice before authorizing a third party to collect
+                or receive your information.
+            </p>
+        </section>
+
+        <section aria-labelledby="changes">
+            <h2 id="changes">13. Changes to This Policy</h2>
+            <p>
+                We may update this policy as the product, partners, legal
+                requirements, or data practices change. We will post the revised
+                policy with a new effective date and provide additional notice
+                when required. Material product changes will not be treated as
+                active until the corresponding app, partner, and operational
+                configuration is enabled.
+            </p>
+        </section>
+
+        <section aria-labelledby="contact">
+            <h2 id="contact">14. Contact Us</h2>
+            <div class="contact-card">
+                <p><strong>Qarshi Pay App Privacy Team</strong></p>
+                <p>
+                    Email:
+                    <a href="mailto:support@qarshiapp.com">support@qarshiapp.com</a>
+                </p>
+                <p>
+                    Before public launch, Qarshi should add its complete legal
+                    entity name, mailing address, and any jurisdiction-specific
+                    privacy contact or appeal information required by law.
+                </p>
+            </div>
+        </section>
+
+        <section aria-labelledby="review">
+            <h2 id="review">15. Legal and Operational Review Notice</h2>
+            <p class="review-note">
+                This is a customer-facing pre-launch draft. Before publication,
+                it must be reviewed against Qarshi's final legal entity,
+                licensing and partner model, actual data inventory, vendor
+                agreements, state-law obligations, Gramm-Leach-Bliley Act
+                coverage, Regulation E responsibilities, incident-response plan,
+                and product configuration. If a separate federal financial
+                privacy notice is required, it should be delivered in addition
+                to this policy.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Qarshi Pay App. Privacy questions:
+        <a href="mailto:support@qarshiapp.com">support@qarshiapp.com</a>
+    </footer>
 </body>
 </html>
